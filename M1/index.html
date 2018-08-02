@@ -13,7 +13,11 @@
     <script type="text/babel">
         var Title = React.createClass({
             render: function() {
-                return <h1>Hello</h1>
+                return (
+                    <h1>
+                        <span>Hello</span>
+                    </h1>
+                )
             }
         });
         ReactDOM.render(<Title />, document.getElementById('app'));
