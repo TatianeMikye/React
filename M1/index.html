@@ -12,8 +12,14 @@
 
     <script>
         var h1 = React.createElement('h1', null, 'hello h1 React');
+        var h1Span = React.createElement('h1', null, React.createElement(
+            'span',
+            null,
+            'Texto do span'
+        ));
+        // ReactDOM.render(h1, document.getElementById('app'));
         ReactDOM.render(h1, document.getElementById('app'));
-        console.log(h1);
+        console.log(h1Span);
     </script>
 </body>
 </html>
